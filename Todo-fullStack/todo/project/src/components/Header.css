@@ -1,0 +1,102 @@
+/* Navbar container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #088F8F;
+  color: white;
+  position: fixed;
+  padding: 4px 12px; /* Slightly increased padding */
+  height: 45px; /* Adjusted for button visibility */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left section (Logo and navigation links) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Right section (Login/Logout) */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Ensure spacing for the logout button */
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+/* Logo styling */
+.logo {
+  height: 25px;
+  width: auto;
+}
+
+/* Logout button styling */
+.logout-button {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  color: white;
+  background-color: red;
+  padding: 5px 10px; /* Slightly increased padding */
+  min-width: 70px; /* Ensure width */
+  text-align: center;
+  display: flex; /* Ensure it appears properly */
+  justify-content: center;
+  align-items: center;
+  height: 30px; /* Ensure it fits inside the header */
+}
+
+/* Hover effect */
+.nav-link:hover, .logout-button:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 6px;
+  }
+
+  .navbar-left, .navbar-right {
+    width: 100%;
+    justify-content: center;
+    margin: 4px 0;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .nav-link, .logout-button {
+    font-size: 12px;
+    padding: 5px 0;
+    width: 100%;
+  }
+}

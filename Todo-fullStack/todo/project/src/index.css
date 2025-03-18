@@ -1,0 +1,58 @@
+
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Style the form container */
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+/* Style for each form-group (label + input) */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style the submit button */
+.submitbutton {
+  display: flex;
+  justify-content: center;
+}
+
+.submitbutton button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitbutton button:hover {
+  background-color: #45a049;
+}
